@@ -8,7 +8,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: white;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -25,16 +25,15 @@
         }
         
         .terms-container {
-            background-color: rgba(108, 145, 255, 0.85);
+            background-color: transparent;
             border-radius: 8px;
             padding: 30px;
-            backdrop-filter: blur(5px);
         }
         
         .term-item {
             margin-bottom: 25px;
             padding: 15px;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(108, 145, 255, 0.3); /* Transparencia original */
             border-radius: 6px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -45,7 +44,7 @@
         
         .term-title {
             font-weight: 600;
-            color: #00128f;
+            color: white;
             margin-bottom: 10px;
             font-size: 18px;
             display: flex;
@@ -53,8 +52,8 @@
         }
         
         .term-number {
-            background-color: #00128f;
-            color: white;
+            background-color: white;
+            color: #00128f;
             width: 24px;
             height: 24px;
             border-radius: 50%;
@@ -66,17 +65,19 @@
         }
         
         .term-content {
-            color: #495057;
+            color: white;
+            text-align: justify; /* Párrafos justificados */
         }
         
         .highlight {
-            background-color: rgba(0, 18, 143, 0.1);
+            background-color: rgba(255, 255, 255, 0.1);
             padding: 8px 12px;
             border-radius: 4px;
-            border-left: 3px solid #00128f;
+            border-left: 3px solid white;
             font-weight: 500;
             display: block;
             margin-top: 10px;
+            text-align: justify; /* Textos destacados justificados */
         }
         
         .term-list {
@@ -91,13 +92,14 @@
             position: relative;
             padding-left: 30px;
             counter-increment: item-counter;
+            text-align: justify; /* Elementos de lista justificados */
         }
         
         .term-list li:before {
             content: counter(item-counter) ".";
             position: absolute;
             left: 0;
-            color: #00128f;
+            color: white;
             font-weight: bold;
         }
         
@@ -155,8 +157,7 @@
                 Uso individual por perfil
             </div>
             <div class="term-content">
-                Cada perfil está diseñado para utilizarse en un solo dispositivo a la vez.
-                Si desea cambiar de dispositivo, debe cerrar sesión correctamente en el anterior.
+                Cada perfil está diseñado para utilizarse en un solo dispositivo a la vez. Si desea cambiar de dispositivo, debe cerrar sesión correctamente en el anterior.
                 <span class="highlight">El uso simultáneo puede provocar bloqueo o suspensión del acceso.</span>
             </div>
         </div>
@@ -167,8 +168,7 @@
                 Prohibido compartir cuentas
             </div>
             <div class="term-content">
-                Compartir una cuenta o perfil con otras personas está completamente prohibido.
-                Esto incluye entregar el acceso a familiares, amigos u otros usuarios.
+                Compartir una cuenta o perfil con otras personas está completamente prohibido. Esto incluye entregar el acceso a familiares, amigos u otros usuarios.
                 <span class="highlight">Este tipo de acciones puede provocar colapso del servicio, y en ese caso, no se ofrece garantía.</span>
             </div>
         </div>
@@ -195,8 +195,7 @@
                 Tiempo estimado de entrega
             </div>
             <div class="term-content">
-                El servicio se entrega o activa en un periodo estimado de 10 a 30 minutos tras la confirmación del pago.
-                En casos excepcionales (alta demanda, mantenimiento, validación), puede haber una leve demora.
+                El servicio se entrega o activa en un periodo estimado de 10 a 30 minutos tras la confirmación del pago. En casos excepcionales (alta demanda, mantenimiento, validación), puede haber una leve demora.
             </div>
         </div>
         
@@ -217,8 +216,7 @@
                 Duración del servicio
             </div>
             <div class="term-content">
-                El tiempo de duración depende del plan adquirido y puede variar entre un mes y un año.
-                El periodo de vigencia comienza desde la fecha de activación, no desde el primer uso.
+                El tiempo de duración depende del plan adquirido y puede variar entre un mes y un año. El periodo de vigencia comienza desde la fecha de activación, no desde el primer uso.
             </div>
         </div>
         
@@ -239,8 +237,7 @@
                 Política de cambios
             </div>
             <div class="term-content">
-                Una vez entregado el producto, no se permiten cambios de perfil, cuenta o tipo de servicio.
-                Es responsabilidad del cliente verificar bien lo que adquiere antes de finalizar su compra.
+                Una vez entregado el producto, no se permiten cambios de perfil, cuenta o tipo de servicio. Es responsabilidad del cliente verificar bien lo que adquiere antes de finalizar su compra.
             </div>
         </div>
         
