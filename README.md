@@ -12,7 +12,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f0f4ff; /* Color sólido que coincide con rgba(108, 145, 255, 0.1) sobre blanco */
+            background-color: white; /* Fondo blanco limpio */
         }
         
         h1 {
@@ -20,22 +20,23 @@
             color: #00128f;
             margin-bottom: 30px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #00128f;
+            border-bottom: 2px solid #6c91ff;
             font-weight: 600;
         }
         
         .terms-container {
             background-color: transparent;
             border-radius: 8px;
-            padding: 30px;
+            padding: 20px 0;
         }
         
         .term-item {
             margin-bottom: 25px;
-            padding: 20px;
+            padding: 25px;
             background-color: white;
-            border-radius: 6px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+            border: 1px solid #f0f0f0; /* Borde sutil */
         }
         
         .term-item:last-child {
@@ -45,7 +46,7 @@
         .term-title {
             font-weight: 600;
             color: #6c91ff;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             font-size: 18px;
             display: flex;
             align-items: center;
@@ -72,14 +73,15 @@
         }
         
         .highlight {
-            background-color: #f0f4ff; /* Mismo color que el fondo de página */
+            background-color: #f8f9ff; /* Fondo muy claro para destacados */
             color: #333;
             padding: 12px 15px;
-            border-radius: 4px;
+            border-radius: 6px;
             font-weight: 500;
             display: block;
             margin-top: 15px;
             text-align: justify;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra sutil */
         }
         
         @media (max-width: 600px) {
@@ -88,11 +90,12 @@
             }
             
             .terms-container {
-                padding: 15px;
+                padding: 10px 0;
             }
             
             .term-item {
-                padding: 15px;
+                padding: 20px;
+                margin-bottom: 20px;
             }
             
             .term-title {
