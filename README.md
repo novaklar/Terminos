@@ -8,19 +8,19 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: white;
+            color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #00128f;
+            background-color: #f8f9fa;
         }
         
         h1 {
             text-align: center;
-            color: white;
+            color: #00128f; /* Título en azul (#00128f) */
             margin-bottom: 30px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #6c91ff;
+            border-bottom: 2px solid #00128f; /* Línea del mismo color azul que el título */
             font-weight: 600;
         }
         
@@ -32,10 +32,10 @@
         
         .term-item {
             margin-bottom: 25px;
-            padding: 15px;
-            background-color: rgba(108, 145, 255, 0.3);
+            padding: 20px;
+            background-color: white;
             border-radius: 6px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         }
         
         .term-item:last-child {
@@ -44,7 +44,7 @@
         
         .term-title {
             font-weight: 600;
-            color: white;
+            color: #6c91ff;
             margin-bottom: 10px;
             font-size: 18px;
             display: flex;
@@ -52,31 +52,33 @@
         }
         
         .term-number {
-            background-color: white;
-            color: #00128f;
-            width: 24px;
-            height: 24px;
+            background-color: #6c91ff;
+            color: white;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            margin-right: 10px;
+            margin-right: 12px;
             font-size: 14px;
+            font-weight: bold;
         }
         
         .term-content {
-            color: white;
+            color: #333;
             text-align: justify;
+            font-size: 15px;
         }
         
         .highlight {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 8px 12px;
+            background-color: rgba(108, 145, 255, 0.1);
+            color: #333;
+            padding: 12px 15px;
             border-radius: 4px;
-            border-left: 3px solid white;
             font-weight: 500;
             display: block;
-            margin-top: 10px;
+            margin-top: 15px;
             text-align: justify;
         }
         
@@ -86,15 +88,19 @@
             }
             
             .terms-container {
-                padding: 20px;
-            }
-            
-            .term-title {
-                font-size: 16px;
+                padding: 15px;
             }
             
             .term-item {
-                padding: 12px;
+                padding: 15px;
+            }
+            
+            .term-title {
+                font-size: 17px;
+            }
+            
+            .term-content {
+                font-size: 14px;
             }
         }
     </style>
@@ -130,7 +136,7 @@
             </div>
             <div class="term-content">
                 Cada perfil está diseñado para utilizarse en un solo dispositivo a la vez. Si desea cambiar de dispositivo, debe cerrar sesión correctamente en el anterior.
-                <span class="highlight">El uso simultáneo puede provocar bloqueo o suspensión del acceso.</span>
+                <div class="highlight">El uso simultáneo puede provocar bloqueo del acceso por un período de hasta 24 horas.</div>
             </div>
         </div>
         
@@ -141,7 +147,7 @@
             </div>
             <div class="term-content">
                 Compartir una cuenta o perfil con otras personas está completamente prohibido. Esto incluye entregar el acceso a familiares, amigos u otros usuarios.
-                <span class="highlight">Este tipo de acciones puede provocar colapso del servicio, y en ese caso, no se ofrece garantía.</span>
+                <div class="highlight">Este tipo de acciones puede provocar colapso del servicio, y en ese caso, no se ofrece garantía.</div>
             </div>
         </div>
         
@@ -152,7 +158,7 @@
             </div>
             <div class="term-content">
                 No está permitido cambiar contraseñas, PINs, correos o cualquier dato interno de la cuenta. Tampoco se permite alterar los métodos de pago dentro de la plataforma ni realizar compras, alquileres o suscripciones adicionales desde el perfil entregado.
-                <span class="highlight">Estas acciones invalidan la garantía y pueden suspender el acceso sin compensación.</span>
+                <div class="highlight">Estas acciones invalidan la garantía y pueden suspender el acceso sin compensación.</div>
             </div>
         </div>
         
@@ -173,7 +179,7 @@
             </div>
             <div class="term-content">
                 Se espera una comunicación cordial entre el comprador y el canal que entrega o da soporte.
-                <span class="highlight">Cualquier actitud ofensiva, amenazante o irrespetuosa podrá resultar en la suspensión del servicio sin derecho a reclamo.</span>
+                <div class="highlight">Cualquier actitud ofensiva, amenazante o irrespetuosa podrá resultar en la suspensión del servicio sin derecho a reclamo.</div>
             </div>
         </div>
         
@@ -194,7 +200,7 @@
             </div>
             <div class="term-content">
                 Si se detecta que un usuario realiza reportes falsos o malintencionados sobre un servicio que está funcionando correctamente, se anulará la posibilidad de recibir soporte o garantía en futuras ocasiones.
-                <span class="highlight">El abuso del sistema de garantías será considerado como intento de fraude.</span>
+                <div class="highlight">El abuso del sistema de garantías será considerado como intento de fraude.</div>
             </div>
         </div>
         
