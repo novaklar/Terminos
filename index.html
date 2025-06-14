@@ -12,12 +12,12 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: #00128f;
         }
         
         h1 {
             text-align: center;
-            color: #00128f;
+            color: white;
             margin-bottom: 30px;
             padding-bottom: 10px;
             border-bottom: 2px solid #6c91ff;
@@ -25,22 +25,22 @@
         }
         
         .terms-container {
-            background-color: white;
+            background-color: rgba(108, 145, 255, 0.85);
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             padding: 30px;
+            backdrop-filter: blur(5px);
         }
         
         .term-item {
             margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #e9ecef;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
         .term-item:last-child {
-            border-bottom: none;
             margin-bottom: 0;
-            padding-bottom: 0;
         }
         
         .term-title {
@@ -48,31 +48,32 @@
             color: #00128f;
             margin-bottom: 10px;
             font-size: 18px;
-            position: relative;
-            padding-left: 20px;
+            display: flex;
+            align-items: center;
         }
         
-        .term-title:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 7px;
-            width: 8px;
-            height: 8px;
-            background-color: #6c91ff;
+        .term-number {
+            background-color: #00128f;
+            color: white;
+            width: 24px;
+            height: 24px;
             border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 14px;
         }
         
         .term-content {
-            padding-left: 20px;
             color: #495057;
         }
         
         .highlight {
-            background-color: #f8f9ff;
+            background-color: rgba(0, 18, 143, 0.1);
             padding: 8px 12px;
             border-radius: 4px;
-            border-left: 3px solid #6c91ff;
+            border-left: 3px solid #00128f;
             font-weight: 500;
             display: block;
             margin-top: 10px;
@@ -82,23 +83,22 @@
             padding-left: 0;
             margin-top: 8px;
             list-style-type: none;
+            counter-reset: item-counter;
         }
         
         .term-list li {
             margin-bottom: 8px;
             position: relative;
-            padding-left: 25px;
+            padding-left: 30px;
+            counter-increment: item-counter;
         }
         
         .term-list li:before {
-            content: "";
+            content: counter(item-counter) ".";
             position: absolute;
-            left: 8px;
-            top: 8px;
-            width: 6px;
-            height: 6px;
-            background-color: #6c91ff;
-            border-radius: 50%;
+            left: 0;
+            color: #00128f;
+            font-weight: bold;
         }
         
         @media (max-width: 600px) {
@@ -113,6 +113,10 @@
             .term-title {
                 font-size: 16px;
             }
+            
+            .term-item {
+                padding: 12px;
+            }
         }
     </style>
 </head>
@@ -121,26 +125,35 @@
     
     <div class="terms-container">
         <div class="term-item">
-            <div class="term-title">No se realizan devoluciones</div>
+            <div class="term-title">
+                <span class="term-number">1</span>
+                No se realizan devoluciones
+            </div>
             <div class="term-content">
                 Todos los productos son digitales, por lo tanto, no aplican para reembolsos. En caso de fallas, se ofrece garantía según lo descrito a continuación.
             </div>
         </div>
         
         <div class="term-item">
-            <div class="term-title">Garantía</div>
+            <div class="term-title">
+                <span class="term-number">2</span>
+                Garantía
+            </div>
             <div class="term-content">
                 Si el servicio presenta fallos no causados por mal uso, se brindará una solución a través de garantía.
                 <ul class="term-list">
-                    <li>Reparación o reactivación del acceso.</li>
-                    <li>Entrega de un nuevo servicio, si aplica.</li>
-                    <li>No hay límite de tiempo específico para reportar, siempre y cuando el servicio siga vigente.</li>
+                    <li>Reparación o reactivación del acceso</li>
+                    <li>Entrega de un nuevo servicio, si aplica</li>
+                    <li>No hay límite de tiempo específico para reportar, siempre y cuando el servicio siga vigente</li>
                 </ul>
             </div>
         </div>
         
         <div class="term-item">
-            <div class="term-title">Uso individual por perfil</div>
+            <div class="term-title">
+                <span class="term-number">3</span>
+                Uso individual por perfil
+            </div>
             <div class="term-content">
                 Cada perfil está diseñado para utilizarse en un solo dispositivo a la vez.
                 Si desea cambiar de dispositivo, debe cerrar sesión correctamente en el anterior.
@@ -149,7 +162,10 @@
         </div>
         
         <div class="term-item">
-            <div class="term-title">Prohibido compartir cuentas</div>
+            <div class="term-title">
+                <span class="term-number">4</span>
+                Prohibido compartir cuentas
+            </div>
             <div class="term-content">
                 Compartir una cuenta o perfil con otras personas está completamente prohibido.
                 Esto incluye entregar el acceso a familiares, amigos u otros usuarios.
@@ -158,20 +174,26 @@
         </div>
         
         <div class="term-item">
-            <div class="term-title">Modificaciones no autorizadas</div>
+            <div class="term-title">
+                <span class="term-number">5</span>
+                Modificaciones no autorizadas
+            </div>
             <div class="term-content">
                 No está permitido:
                 <ul class="term-list">
-                    <li>Cambiar contraseñas, PINs, correos o cualquier dato interno de la cuenta.</li>
-                    <li>Alterar los métodos de pago dentro de la plataforma.</li>
-                    <li>Realizar compras, alquileres o suscripciones adicionales desde el perfil entregado.</li>
+                    <li>Cambiar contraseñas, PINs, correos o cualquier dato interno de la cuenta</li>
+                    <li>Alterar los métodos de pago dentro de la plataforma</li>
+                    <li>Realizar compras, alquileres o suscripciones adicionales desde el perfil entregado</li>
                 </ul>
                 <span class="highlight">Estas acciones invalidan la garantía y pueden suspender el acceso sin compensación.</span>
             </div>
         </div>
         
         <div class="term-item">
-            <div class="term-title">Tiempo estimado de entrega</div>
+            <div class="term-title">
+                <span class="term-number">6</span>
+                Tiempo estimado de entrega
+            </div>
             <div class="term-content">
                 El servicio se entrega o activa en un periodo estimado de 10 a 30 minutos tras la confirmación del pago.
                 En casos excepcionales (alta demanda, mantenimiento, validación), puede haber una leve demora.
@@ -179,7 +201,10 @@
         </div>
         
         <div class="term-item">
-            <div class="term-title">Trato respetuoso</div>
+            <div class="term-title">
+                <span class="term-number">7</span>
+                Trato respetuoso
+            </div>
             <div class="term-content">
                 Se espera una comunicación cordial entre el comprador y el canal que entrega o da soporte.
                 <span class="highlight">Cualquier actitud ofensiva, amenazante o irrespetuosa podrá resultar en la suspensión del servicio sin derecho a reclamo.</span>
@@ -187,7 +212,10 @@
         </div>
         
         <div class="term-item">
-            <div class="term-title">Duración del servicio</div>
+            <div class="term-title">
+                <span class="term-number">8</span>
+                Duración del servicio
+            </div>
             <div class="term-content">
                 El tiempo de duración depende del plan adquirido y puede variar entre un mes y un año.
                 El periodo de vigencia comienza desde la fecha de activación, no desde el primer uso.
@@ -195,7 +223,10 @@
         </div>
         
         <div class="term-item">
-            <div class="term-title">Reportes falsos</div>
+            <div class="term-title">
+                <span class="term-number">9</span>
+                Reportes falsos
+            </div>
             <div class="term-content">
                 Si se detecta que un usuario realiza reportes falsos o malintencionados sobre un servicio que está funcionando correctamente, se anulará la posibilidad de recibir soporte o garantía en futuras ocasiones.
                 <span class="highlight">El abuso del sistema de garantías será considerado como intento de fraude.</span>
@@ -203,7 +234,10 @@
         </div>
         
         <div class="term-item">
-            <div class="term-title">Política de cambios</div>
+            <div class="term-title">
+                <span class="term-number">10</span>
+                Política de cambios
+            </div>
             <div class="term-content">
                 Una vez entregado el producto, no se permiten cambios de perfil, cuenta o tipo de servicio.
                 Es responsabilidad del cliente verificar bien lo que adquiere antes de finalizar su compra.
@@ -211,7 +245,10 @@
         </div>
         
         <div class="term-item">
-            <div class="term-title">Modificación de los términos</div>
+            <div class="term-title">
+                <span class="term-number">11</span>
+                Modificación de los términos
+            </div>
             <div class="term-content">
                 Estos términos pueden actualizarse sin previo aviso. Se recomienda al usuario revisarlos periódicamente para mantenerse informado sobre posibles cambios.
             </div>
