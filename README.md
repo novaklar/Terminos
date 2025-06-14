@@ -1,1 +1,221 @@
-# Terminos
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #00128f;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #6c91ff;
+            font-weight: 600;
+        }
+        
+        .terms-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+        }
+        
+        .term-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .term-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .term-title {
+            font-weight: 600;
+            color: #00128f;
+            margin-bottom: 10px;
+            font-size: 18px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .term-title:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 8px;
+            height: 8px;
+            background-color: #6c91ff;
+            border-radius: 50%;
+        }
+        
+        .term-content {
+            padding-left: 20px;
+            color: #495057;
+        }
+        
+        .highlight {
+            background-color: #f8f9ff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border-left: 3px solid #6c91ff;
+            font-weight: 500;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        .term-list {
+            padding-left: 0;
+            margin-top: 8px;
+            list-style-type: none;
+        }
+        
+        .term-list li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .term-list li:before {
+            content: "";
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            background-color: #6c91ff;
+            border-radius: 50%;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            
+            .terms-container {
+                padding: 20px;
+            }
+            
+            .term-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Términos y Condiciones</h1>
+    
+    <div class="terms-container">
+        <div class="term-item">
+            <div class="term-title">No se realizan devoluciones</div>
+            <div class="term-content">
+                Todos los productos son digitales, por lo tanto, no aplican para reembolsos. En caso de fallas, se ofrece garantía según lo descrito a continuación.
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Garantía</div>
+            <div class="term-content">
+                Si el servicio presenta fallos no causados por mal uso, se brindará una solución a través de garantía.
+                <ul class="term-list">
+                    <li>Reparación o reactivación del acceso.</li>
+                    <li>Entrega de un nuevo servicio, si aplica.</li>
+                    <li>No hay límite de tiempo específico para reportar, siempre y cuando el servicio siga vigente.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Uso individual por perfil</div>
+            <div class="term-content">
+                Cada perfil está diseñado para utilizarse en un solo dispositivo a la vez.
+                Si desea cambiar de dispositivo, debe cerrar sesión correctamente en el anterior.
+                <span class="highlight">El uso simultáneo puede provocar bloqueo o suspensión del acceso.</span>
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Prohibido compartir cuentas</div>
+            <div class="term-content">
+                Compartir una cuenta o perfil con otras personas está completamente prohibido.
+                Esto incluye entregar el acceso a familiares, amigos u otros usuarios.
+                <span class="highlight">Este tipo de acciones puede provocar colapso del servicio, y en ese caso, no se ofrece garantía.</span>
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Modificaciones no autorizadas</div>
+            <div class="term-content">
+                No está permitido:
+                <ul class="term-list">
+                    <li>Cambiar contraseñas, PINs, correos o cualquier dato interno de la cuenta.</li>
+                    <li>Alterar los métodos de pago dentro de la plataforma.</li>
+                    <li>Realizar compras, alquileres o suscripciones adicionales desde el perfil entregado.</li>
+                </ul>
+                <span class="highlight">Estas acciones invalidan la garantía y pueden suspender el acceso sin compensación.</span>
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Tiempo estimado de entrega</div>
+            <div class="term-content">
+                El servicio se entrega o activa en un periodo estimado de 10 a 30 minutos tras la confirmación del pago.
+                En casos excepcionales (alta demanda, mantenimiento, validación), puede haber una leve demora.
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Trato respetuoso</div>
+            <div class="term-content">
+                Se espera una comunicación cordial entre el comprador y el canal que entrega o da soporte.
+                <span class="highlight">Cualquier actitud ofensiva, amenazante o irrespetuosa podrá resultar en la suspensión del servicio sin derecho a reclamo.</span>
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Duración del servicio</div>
+            <div class="term-content">
+                El tiempo de duración depende del plan adquirido y puede variar entre un mes y un año.
+                El periodo de vigencia comienza desde la fecha de activación, no desde el primer uso.
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Reportes falsos</div>
+            <div class="term-content">
+                Si se detecta que un usuario realiza reportes falsos o malintencionados sobre un servicio que está funcionando correctamente, se anulará la posibilidad de recibir soporte o garantía en futuras ocasiones.
+                <span class="highlight">El abuso del sistema de garantías será considerado como intento de fraude.</span>
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Política de cambios</div>
+            <div class="term-content">
+                Una vez entregado el producto, no se permiten cambios de perfil, cuenta o tipo de servicio.
+                Es responsabilidad del cliente verificar bien lo que adquiere antes de finalizar su compra.
+            </div>
+        </div>
+        
+        <div class="term-item">
+            <div class="term-title">Modificación de los términos</div>
+            <div class="term-content">
+                Estos términos pueden actualizarse sin previo aviso. Se recomienda al usuario revisarlos periódicamente para mantenerse informado sobre posibles cambios.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
