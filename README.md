@@ -33,7 +33,7 @@
         .term-item {
             margin-bottom: 25px;
             padding: 15px;
-            background-color: rgba(108, 145, 255, 0.3); /* Transparencia original */
+            background-color: rgba(108, 145, 255, 0.3);
             border-radius: 6px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -66,7 +66,7 @@
         
         .term-content {
             color: white;
-            text-align: justify; /* Párrafos justificados */
+            text-align: justify;
         }
         
         .highlight {
@@ -77,30 +77,7 @@
             font-weight: 500;
             display: block;
             margin-top: 10px;
-            text-align: justify; /* Textos destacados justificados */
-        }
-        
-        .term-list {
-            padding-left: 0;
-            margin-top: 8px;
-            list-style-type: none;
-            counter-reset: item-counter;
-        }
-        
-        .term-list li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 30px;
-            counter-increment: item-counter;
-            text-align: justify; /* Elementos de lista justificados */
-        }
-        
-        .term-list li:before {
-            content: counter(item-counter) ".";
-            position: absolute;
-            left: 0;
-            color: white;
-            font-weight: bold;
+            text-align: justify;
         }
         
         @media (max-width: 600px) {
@@ -142,12 +119,7 @@
                 Garantía
             </div>
             <div class="term-content">
-                Si el servicio presenta fallos no causados por mal uso, se brindará una solución a través de garantía.
-                <ul class="term-list">
-                    <li>Reparación o reactivación del acceso</li>
-                    <li>Entrega de un nuevo servicio, si aplica</li>
-                    <li>No hay límite de tiempo específico para reportar, siempre y cuando el servicio siga vigente</li>
-                </ul>
+                Si el servicio presenta fallos no causados por mal uso, se brindará una solución a través de garantía. Esto incluye: reparación o reactivación del acceso, entrega de un nuevo servicio si aplica, y no hay límite de tiempo específico para reportar, siempre y cuando el servicio siga vigente.
             </div>
         </div>
         
@@ -179,12 +151,7 @@
                 Modificaciones no autorizadas
             </div>
             <div class="term-content">
-                No está permitido:
-                <ul class="term-list">
-                    <li>Cambiar contraseñas, PINs, correos o cualquier dato interno de la cuenta</li>
-                    <li>Alterar los métodos de pago dentro de la plataforma</li>
-                    <li>Realizar compras, alquileres o suscripciones adicionales desde el perfil entregado</li>
-                </ul>
+                No está permitido cambiar contraseñas, PINs, correos o cualquier dato interno de la cuenta. Tampoco se permite alterar los métodos de pago dentro de la plataforma ni realizar compras, alquileres o suscripciones adicionales desde el perfil entregado.
                 <span class="highlight">Estas acciones invalidan la garantía y pueden suspender el acceso sin compensación.</span>
             </div>
         </div>
