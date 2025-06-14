@@ -12,15 +12,15 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: #f0f4ff; /* Color sólido que coincide con rgba(108, 145, 255, 0.1) sobre blanco */
         }
         
         h1 {
             text-align: center;
-            color: #00128f; /* Título en azul (#00128f) */
+            color: #00128f;
             margin-bottom: 30px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #00128f; /* Línea del mismo color azul que el título */
+            border-bottom: 2px solid #00128f;
             font-weight: 600;
         }
         
@@ -72,7 +72,7 @@
         }
         
         .highlight {
-            background-color: rgba(108, 145, 255, 0.1);
+            background-color: #f0f4ff; /* Mismo color que el fondo de página */
             color: #333;
             padding: 12px 15px;
             border-radius: 4px;
